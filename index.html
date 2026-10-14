@@ -4,50 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore gifts, decorations and home decor at Laxmi Sajavat Shoppe, Vaijapur, Maharashtra. Contact us on WhatsApp.">
   <title>Laxmi Sajavat Shoppe | Vaijapur</title>
   <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #49352e;
-      background: #fffaf4;
+      color: #38291f;
+      background: #fffaf3;
+      line-height: 1.6;
     }
     header {
+      background: #f0e3d2;
       text-align: center;
-      padding: 28px 16px;
-      background: #f1e3d3;
+      padding: 28px 15px;
     }
-    header h1 { margin: 0 0 8px; }
+    header h1 {
+      color: #634333;
+      font-family: Georgia, serif;
+      margin: 0;
+    }
     nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
       padding: 14px;
-      text-align: center;
-      background: #6c4436;
+      background: #634333;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      padding: 8px 14px;
+      border-radius: 5px;
     }
+    nav a:hover { background: #bd9254; }
     .hero {
-      padding: 55px 20px;
       text-align: center;
+      padding: 65px 20px;
+      background: linear-gradient(135deg, #fffaf3, #f0e3d2);
     }
-    .hero h2 { font-size: 32px; }
+    .hero h2 {
+      font-family: Georgia, serif;
+      color: #634333;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.2;
+    }
     .button {
       display: inline-block;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 8px;
-      text-decoration: none;
-      background: #6c4436;
+      background: #634333;
       color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 7px;
+      border-radius: 7px;
     }
-    .products {
-      padding: 25px 18px;
-      max-width: 1000px;
+    .container {
+      width: min(1000px, 92%);
       margin: auto;
+      padding: 35px 0;
     }
     .grid {
       display: grid;
@@ -56,17 +71,19 @@
     }
     .card {
       background: white;
-      padding: 24px;
-      border-radius: 12px;
-      text-align: center;
       border: 1px solid #eadccd;
-    }
-    .emoji { font-size: 42px; }
-    footer {
-      padding: 25px;
+      border-radius: 12px;
+      padding: 22px;
       text-align: center;
-      background: #f1e3d3;
     }
+    .emoji { font-size: 40px; }
+    footer {
+      background: #38291f;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    footer a { color: #f1d4a5; }
   </style>
 </head>
 <body>
@@ -76,72 +93,43 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#shop">Categories</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="hero" id="home">
-    <h2>Gifts for Every Special Moment</h2>
-    <p>Discover gifts, decorations and home décor in Vaijapur.</p>
-    <a class="button" href="#shop">Explore Collection</a>
+  <section class="hero">
+    <p>GIFTS • DECORATION • HOME DÉCOR</p>
+    <h2>Little Gifts.<br>Beautiful Memories.</h2>
+    <p>Discover thoughtful gifts and decorations for every special occasion.</p>
+    <a class="button" href="products.html">Explore Products</a>
     <a class="button"
        href="https://wa.me/917420085729?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
-       target="_blank" rel="noopener">Order on WhatsApp</a>
+       target="_blank" rel="noopener">Enquire on WhatsApp</a>
   </section>
 
-  <section class="products" id="shop">
-    <h2>Explore Our Categories</h2>
+  <main class="container">
+    <h2 style="text-align:center;color:#634333">Explore Our Collections</h2>
     <div class="grid">
-      <div class="card">
-        <div class="emoji">🎁</div>
-        <h3>Gift Items</h3>
-        <p>Thoughtful gifts for special occasions.</p>
-      </div>
-      <div class="card">
-        <div class="emoji">🧸</div>
-        <h3>Soft Toys</h3>
-        <p>Lovely companions and gifting options.</p>
-      </div>
-      <div class="card">
-        <div class="emoji">🏡</div>
-        <h3>Home Décor</h3>
-        <p>Decorative pieces to brighten your home.</p>
-      </div>
-      <div class="card">
-        <div class="emoji">🌸</div>
-        <h3>Decoration</h3>
-        <p>Beautiful decorations for celebrations.</p>
-      </div>
-      <div class="card">
-        <div class="emoji">🖼️</div>
-        <h3>Personalized Gifts</h3>
-        <p>Ask us about customized gift options.</p>
-      </div>
-      <div class="card">
-        <div class="emoji">🪔</div>
-        <h3>Festive Collection</h3>
-        <p>Décor and gifting for festive occasions.</p>
-      </div>
+      <div class="card"><div class="emoji">🎁</div><h3>Gift Items</h3><p>Thoughtful gifts for special moments.</p></div>
+      <div class="card"><div class="emoji">🧸</div><h3>Soft Toys</h3><p>Lovely gifting options.</p></div>
+      <div class="card"><div class="emoji">🏡</div><h3>Home Décor</h3><p>Beautiful touches for your home.</p></div>
+      <div class="card"><div class="emoji">🎊</div><h3>Party Decoration</h3><p>Decorations for celebrations.</p></div>
+      <div class="card"><div class="emoji">💝</div><h3>Personalized Gifts</h3><p>Ask about customization options.</p></div>
+      <div class="card"><div class="emoji">🪔</div><h3>Festive Collection</h3><p>Make festivals extra special.</p></div>
     </div>
-  </section>
+  </main>
 
-  <footer id="contact">
-    <h2>Visit Our Shop</h2>
+  <footer>
+    <h3>Laxmi Sajavat Shoppe</h3>
     <p>Shop No. 4, Ekta Complex, Ladgaon Road,<br>
        Shri Swami Samarth Nagar, Vaijapur,<br>
        Maharashtra 423701</p>
     <p>Phone: 074200 85729</p>
-    <a href="https://www.instagram.com/laxmi.sajavat.shopee_vaijapur/">
-      Follow us on Instagram
-    </a>
-    <p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Shop+No+4+Ekta+Complex+Ladgaon+Road+Vaijapur+Maharashtra+423701">
-        Get Directions
-      </a>
-    </p>
-    <p>© Laxmi Sajavat Shoppe</p>
+    <p><a href="https://www.instagram.com/laxmi.sajavat.shopee_vaijapur/" target="_blank" rel="noopener">Follow us on Instagram</a></p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=Shop+No+4+Ekta+Complex+Ladgaon+Road+Vaijapur+Maharashtra+423701" target="_blank" rel="noopener">Get Directions</a></p>
+    <small>© 2026 Laxmi Sajavat Shoppe</small>
   </footer>
 </body>
 </html>
-
